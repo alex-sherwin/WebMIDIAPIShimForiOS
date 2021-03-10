@@ -54,25 +54,30 @@
     WKWebViewConfiguration *configuration = [MIDIWebView createConfigurationWithMIDIDriver:_midiDriver sysexConfirmation:^(NSString *url) { return YES; }];
 
     MIDIWebView *webView = [[MIDIWebView alloc] initWithFrame:self.view.bounds configuration:configuration];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:FALSE];
+    
     [self.view addSubview:webView];
 
     // Create a URL input field on the navigation bar
-    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 30)];
-    [textField setBorderStyle:UITextBorderStyleRoundedRect];
-    [textField setPlaceholder:@"Enter URL"];
-    [textField addTarget:self action:@selector(onEditingDidEnd:) forControlEvents:UIControlEventEditingDidEndOnExit];
-    [textField setAutocorrectionType:UITextAutocorrectionTypeNo];
-    [textField setKeyboardType:UIKeyboardTypeURL];
-    [textField setReturnKeyType:UIReturnKeyGo];
-    [textField setClearButtonMode:UITextFieldViewModeWhileEditing];
-    self.navigationItem.titleView = textField;
+//    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 30)];
+//    [textField setBorderStyle:UITextBorderStyleRoundedRect];
+//    [textField setPlaceholder:@"Enter URL"];
+//    [textField addTarget:self action:@selector(onEditingDidEnd:) forControlEvents:UIControlEventEditingDidEndOnExit];
+//    [textField setAutocorrectionType:UITextAutocorrectionTypeNo];
+//    [textField setKeyboardType:UIKeyboardTypeURL];
+//    [textField setReturnKeyType:UIReturnKeyGo];
+//    [textField setClearButtonMode:UITextFieldViewModeWhileEditing];
+//    self.navigationItem.titleView = textField;
 
     self.webView = webView;
 
     // Open sample HTML file at bundle path
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
-    NSString *html = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    [_webView loadHTMLString:html baseURL:nil];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+//    NSString *html = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+//    [_webView loadHTMLString:html baseURL:nil];
+    
+    [self loadURL:[NSURL URLWithString:@"http://192.168.1.123:9999/musicianator/wait"]];
 }
 
 - (void)didReceiveMemoryWarning
