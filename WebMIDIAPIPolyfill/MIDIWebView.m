@@ -31,12 +31,12 @@
     
     // Create a delegate for handling informal URL schemes.
     NSString *polyfill_path = [[NSBundle mainBundle] pathForResource:@"WebMIDIAPIPolyfill" ofType:@"js"];
-    NSString *polyfill_script = [NSString stringWithContentsOfFile:polyfill_path encoding:NSUTF8StringEncoding error:nil];
-    WKUserScript *script = [[WKUserScript alloc] initWithSource:polyfill_script injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:YES];
+    NSString *polyfill_script_contents = [NSString stringWithContentsOfFile:polyfill_path encoding:NSUTF8StringEncoding error:nil];
+    WKUserScript *polyfill_script = [[WKUserScript alloc] initWithSource:polyfill_script_contents injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:YES];
     
     // Inject Web MIDI API bridge JavaScript
     WKUserContentController *userContentController = [[WKUserContentController alloc] init];
-    [userContentController addUserScript:script];
+    [userContentController addUserScript:polyfill_script];
     [userContentController addScriptMessageHandler:delegate name:@"onready"];
     [userContentController addScriptMessageHandler:delegate name:@"send"];
     [userContentController addScriptMessageHandler:delegate name:@"clear"];

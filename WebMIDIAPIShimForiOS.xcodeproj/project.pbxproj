@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4A878625F9C2AB0083CD5F /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A878525F9C2AB0083CD5F /* dist */; };
 		C127159A1ADFF69B00DCD37B /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = C12715991ADFF69B00DCD37B /* test1.html */; };
 		C191EE3A1917B6DC0014167A /* MIDIDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = C191EE391917B6DB0014167A /* MIDIDriver.m */; };
 		C191EE3D1917B85E0014167A /* MIDIParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C191EE3C1917B85E0014167A /* MIDIParser.m */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B4A878425F9C1A90083CD5F /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = WebMIDIAPIPolyfill/dist; sourceTree = "<group>"; };
+		0B4A878525F9C2AB0083CD5F /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = ../../musicianator/dist; sourceTree = "<group>"; };
 		C12715991ADFF69B00DCD37B /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
 		C191EE381917B6DB0014167A /* MIDIDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIDriver.h; sourceTree = "<group>"; };
 		C191EE391917B6DB0014167A /* MIDIDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIDriver.m; sourceTree = "<group>"; };
@@ -108,6 +111,7 @@
 		C19656D5190E771C0085E3FE = {
 			isa = PBXGroup;
 			children = (
+				0B4A878525F9C2AB0083CD5F /* dist */,
 				C19656E7190E771C0085E3FE /* WebMIDIAPIPolyfill */,
 				C1965709190E771C0085E3FE /* WebMIDIAPIPolyfillTests */,
 				C19656E0190E771C0085E3FE /* Frameworks */,
@@ -127,6 +131,7 @@
 		C19656E0190E771C0085E3FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B4A878425F9C1A90083CD5F /* dist */,
 				C1A6EB1719E2053F00748234 /* WebKit.framework */,
 				C19656E1190E771C0085E3FE /* Foundation.framework */,
 				C19656E3190E771C0085E3FE /* CoreGraphics.framework */,
@@ -276,6 +281,7 @@
 				C19656F5190E771C0085E3FE /* Main_iPhone.storyboard in Resources */,
 				C19656EC190E771C0085E3FE /* InfoPlist.strings in Resources */,
 				C196571E190E82F80085E3FE /* WebMIDIAPIPolyfill.js in Resources */,
+				0B4A878625F9C2AB0083CD5F /* dist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +477,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebMIDIAPIPolyfill/WebMIDIAPIShimForiOS-Prefix.pch";
 				INFOPLIST_FILE = "WebMIDIAPIPolyfill/WebMIDIAPIShimForiOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				PRODUCT_NAME = WebMIDIAPIShimForiOS;
 				WRAPPER_EXTENSION = app;
 			};
@@ -485,7 +491,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebMIDIAPIPolyfill/WebMIDIAPIShimForiOS-Prefix.pch";
 				INFOPLIST_FILE = "WebMIDIAPIPolyfill/WebMIDIAPIShimForiOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				PRODUCT_NAME = WebMIDIAPIShimForiOS;
 				WRAPPER_EXTENSION = app;
 			};
