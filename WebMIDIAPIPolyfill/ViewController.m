@@ -60,12 +60,17 @@
 
     _midiDriver = [[MIDIDriver alloc] init];
     WKWebViewConfiguration *configuration = [MIDIWebView createConfigurationWithMIDIDriver:_midiDriver sysexConfirmation:^(NSString *url) { return YES; }];
+    
+    configuration.websiteDataStore = [WKWebsiteDataStore defaultDataStore];
+
 
     MIDIWebView *webView = [[MIDIWebView alloc] initWithFrame:self.view.bounds configuration:configuration];
     
     [self.navigationController setNavigationBarHidden:YES animated:FALSE];
     
     [self.view addSubview:webView];
+    
+    
     
 
     // Create a URL input field on the navigation bar
