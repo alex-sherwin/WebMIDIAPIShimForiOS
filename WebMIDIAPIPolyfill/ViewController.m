@@ -121,10 +121,19 @@
 
 
     
+    // working for remote URL
     
+//    [self loadURL:[NSURL URLWithString:@"http://192.168.1.123:9999/wait"]];
     
+    // local files
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"dist"];
+    NSURL *url = [NSURL fileURLWithPath:path isDirectory:false];
+    [configuration.preferences setValue:@YES forKey:@"allowFileAccessFromFileURLs"];
+    NSURL *readAccessToURL = [url URLByDeletingLastPathComponent];
+    [_webView loadFileURL:url allowingReadAccessToURL:readAccessToURL];
 
-    [self loadURL:[NSURL URLWithString:@"http://192.168.1.123:9999/wait"]];
+    
 }
 
 - (void)didReceiveMemoryWarning
