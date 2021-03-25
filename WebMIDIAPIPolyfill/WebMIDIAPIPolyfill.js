@@ -404,6 +404,10 @@
                                     this._onmidimessage = value;
                                     if (this.connection == MIDIPortConnectionState.closed) {
 
+                                        // so since a forEach loop in webmidi.js calls a Input() constructor which assigns to property
+                                        // "onmidimessage" (this setter function) it creates an accidental nested invocation of the 
+                                        // setupInputs method while still inside the loops forEach lambda causing an input to get added
+                                        // twice since it's already passed the guard which checks if it shouldnt be added
                                         setTimeout(function() {
                                             this._setConnection(MIDIPortConnectionState.open);
                                         }.bind(this), 0)
