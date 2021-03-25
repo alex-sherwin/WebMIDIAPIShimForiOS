@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B4A878625F9C2AB0083CD5F /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A878525F9C2AB0083CD5F /* dist */; };
+		0B6414D92606FB55000C5C20 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 0B6414D82606FB55000C5C20 /* dist */; };
 		C127159A1ADFF69B00DCD37B /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = C12715991ADFF69B00DCD37B /* test1.html */; };
 		C191EE3A1917B6DC0014167A /* MIDIDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = C191EE391917B6DB0014167A /* MIDIDriver.m */; };
 		C191EE3D1917B85E0014167A /* MIDIParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C191EE3C1917B85E0014167A /* MIDIParser.m */; };
@@ -46,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		0B4A878425F9C1A90083CD5F /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = WebMIDIAPIPolyfill/dist; sourceTree = "<group>"; };
-		0B4A878525F9C2AB0083CD5F /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = ../../musicianator/dist; sourceTree = "<group>"; };
+		0B6414D82606FB55000C5C20 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = ../../notewatcher/web/dist; sourceTree = "<group>"; };
 		C12715991ADFF69B00DCD37B /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
 		C191EE381917B6DB0014167A /* MIDIDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIDriver.h; sourceTree = "<group>"; };
 		C191EE391917B6DB0014167A /* MIDIDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIDriver.m; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		C19656D5190E771C0085E3FE = {
 			isa = PBXGroup;
 			children = (
-				0B4A878525F9C2AB0083CD5F /* dist */,
+				0B6414D82606FB55000C5C20 /* dist */,
 				C19656E7190E771C0085E3FE /* WebMIDIAPIPolyfill */,
 				C1965709190E771C0085E3FE /* WebMIDIAPIPolyfillTests */,
 				C19656E0190E771C0085E3FE /* Frameworks */,
@@ -284,7 +284,7 @@
 				C19656F5190E771C0085E3FE /* Main_iPhone.storyboard in Resources */,
 				C19656EC190E771C0085E3FE /* InfoPlist.strings in Resources */,
 				C196571E190E82F80085E3FE /* WebMIDIAPIPolyfill.js in Resources */,
-				0B4A878625F9C2AB0083CD5F /* dist in Resources */,
+				0B6414D92606FB55000C5C20 /* dist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
