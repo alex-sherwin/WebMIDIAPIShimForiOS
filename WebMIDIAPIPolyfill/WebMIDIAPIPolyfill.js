@@ -403,7 +403,11 @@
                                 set: function (value) {
                                     this._onmidimessage = value;
                                     if (this.connection == MIDIPortConnectionState.closed) {
-                                        this._setConnection(MIDIPortConnectionState.open);
+
+                                        setTimeout(function() {
+                                            this._setConnection(MIDIPortConnectionState.open);
+                                        }.bind(this), 0)
+                                        
                                     }
                                 },
                                 get : function () {
