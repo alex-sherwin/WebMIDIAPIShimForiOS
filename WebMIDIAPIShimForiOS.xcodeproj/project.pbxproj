@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		0B4A878425F9C1A90083CD5F /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = WebMIDIAPIPolyfill/dist; sourceTree = "<group>"; };
-		0B6414D82606FB55000C5C20 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = ../../notewatcher/web/dist; sourceTree = "<group>"; };
+		0B6414D82606FB55000C5C20 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = ../notewatcher/web/dist; sourceTree = "<group>"; };
 		C12715991ADFF69B00DCD37B /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
 		C191EE381917B6DB0014167A /* MIDIDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIDriver.h; sourceTree = "<group>"; };
 		C191EE391917B6DB0014167A /* MIDIDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIDriver.m; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1240;
-				ORGANIZATIONNAME = "Takashi Mizuhiki";
+				ORGANIZATIONNAME = "Alex Sherwin";
 				TargetAttributes = {
 					C19656DD190E771C0085E3FE = {
 						DevelopmentTeam = 3SUZ5R3HXK;
@@ -254,7 +254,7 @@
 				};
 			};
 			buildConfigurationList = C19656D9190E771C0085E3FE /* Build configuration list for PBXProject "WebMIDIAPIShimForiOS" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -481,8 +481,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebMIDIAPIPolyfill/WebMIDIAPIShimForiOS-Prefix.pch";
 				INFOPLIST_FILE = "WebMIDIAPIPolyfill/WebMIDIAPIShimForiOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				PRODUCT_BUNDLE_IDENTIFIER = codes.cape.Musicianator;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = codes.cape.pianorrator;
 				PRODUCT_NAME = WebMIDIAPIShimForiOS;
 				WRAPPER_EXTENSION = app;
 			};
@@ -497,8 +497,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebMIDIAPIPolyfill/WebMIDIAPIShimForiOS-Prefix.pch";
 				INFOPLIST_FILE = "WebMIDIAPIPolyfill/WebMIDIAPIShimForiOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				PRODUCT_BUNDLE_IDENTIFIER = codes.cape.Musicianator;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = codes.cape.pianorrator;
 				PRODUCT_NAME = WebMIDIAPIShimForiOS;
 				WRAPPER_EXTENSION = app;
 			};
