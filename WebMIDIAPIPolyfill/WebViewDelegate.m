@@ -79,7 +79,7 @@
                 }
             }
             
-            if (_sysexEnabled == NO && sysexIncluded == YES) {
+            if (self->_sysexEnabled == NO && sysexIncluded == YES) {
                 // should throw InvalidAccessError exception here
                 return;
             }

@@ -253,8 +253,8 @@
     ItemCount index = [_parsers indexOfObject:parser];
 
     dispatch_async(dispatch_get_main_queue(), ^{
-        if (_onMessageReceived) {
-            _onMessageReceived(index, data, timestamp);
+        if (self->_onMessageReceived) {
+            self->_onMessageReceived(index, data, timestamp);
         }
     });    
 }

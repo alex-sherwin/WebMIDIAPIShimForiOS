@@ -242,7 +242,7 @@
 		C19656D6190E771C0085E3FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Alex Sherwin";
 				TargetAttributes = {
 					C19656DD190E771C0085E3FE = {
@@ -255,10 +255,9 @@
 			};
 			buildConfigurationList = C19656D9190E771C0085E3FE /* Build configuration list for PBXProject "WebMIDIAPIShimForiOS" */;
 			compatibilityVersion = "Xcode 13.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -521,6 +520,7 @@
 				);
 				INFOPLIST_FILE = "WebMIDIAPIPolyfillTests/WebMIDIAPIShimForiOSTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.taktech.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = WebMIDIAPIShimForiOSTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -540,6 +540,7 @@
 				GCC_PREFIX_HEADER = "WebMIDIAPIPolyfill/WebMIDIAPIShimForiOS-Prefix.pch";
 				INFOPLIST_FILE = "WebMIDIAPIPolyfillTests/WebMIDIAPIShimForiOSTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.taktech.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = WebMIDIAPIShimForiOSTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
